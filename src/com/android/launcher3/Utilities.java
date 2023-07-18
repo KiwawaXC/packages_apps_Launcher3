@@ -933,15 +933,6 @@ public final class Utilities {
         return prefs.getBoolean(KEY_DRAWER_SEARCH, true);
     }
 
-    public static boolean showSmartspace(Context context) {
-        return isGSAEnabled(context) && isSmartspaceEnabled(context);
-    }
-
-    private static boolean isSmartspaceEnabled(Context context) {
-        SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
-        return prefs.getBoolean(KEY_SMARTSPACE, true);
-    }
-
     public static int getHotseatOpacity(Context context) {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
         return prefs.getInt(KEY_HOTSEAT_OPACITY, 40);
